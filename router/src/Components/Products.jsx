@@ -12,7 +12,6 @@ export default class Products extends React.Component{
 
     componentDidMount=()=>{
         this.setState({data:data})
-        console.log(data);
     }
 
     render(){
@@ -20,7 +19,7 @@ export default class Products extends React.Component{
             <div>
                 {
                     this.state.data.map((p,index)=>(
-                         <Link key={index} to={`/product/:${p.id}`}>{p.title}    </Link>
+                         <Link key={index} to={`/product/${p.id}`}>{p.title}<br></br></Link>
                     ))
                 }
             </div>

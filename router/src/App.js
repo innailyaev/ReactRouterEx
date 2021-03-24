@@ -3,7 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Products from "./Components/Products";
 import Homepage from './Components/Homepage';
 import Header from "./Components/Header";
-import ProductDetail from "./Components/ProductDetail"
+import ProductDetails from "./Components/ProductDetails"
 function App() {
   return (
     <div className="App">
@@ -12,7 +12,7 @@ function App() {
           <Header/>
           <Route path="/" exact component={Homepage}/>
           <Route path="/products" exact component={Products}/>
-          <Route path="/product/:1" exact component={ProductDetail}/>
+          <Route path="/product/:id" exact component={ProductDetails}/>
 
         </div>
       </BrowserRouter>
